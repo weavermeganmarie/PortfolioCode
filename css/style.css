@@ -2,9 +2,9 @@
 
 body{
     display: grid;
-    margin-left: 120px;
+    margin-left: 75px;
     margin-top: 0px;
-    margin-right: 120px;
+    margin-right: 75px;
     columns: 1;
     column-width: 100%;
     grid-row: auto auto auto auto auto;
@@ -65,23 +65,19 @@ p4{font-family: Schoolbell;
 
 /*Header*/
 .header{grid-area: header;
-    display: grid;
-    columns: 2;
-    column-width: 50% 50%;
-    grid-row: 75px 305px;
     position: relative;
     width: 100%;
-    grid-template-areas: 
-        "nav nav"
-        "profile personalInfo";
     }
 #fixedlogo{position: fixed;
-    left: 30px;
+    left: 10px;
     top: 26px;
     width: 60px;}
-#nav{grid-area: nav;
-    }
-#profile{grid-area: profile;}
+.headerFlexContainer{
+    display: flex;
+}
+.headerFlexChild{
+    width: 100%;
+}
 #swirlarrow{
     animation: swirlArrow 3s infinite;
     position: absolute;
@@ -119,7 +115,7 @@ p4{font-family: Schoolbell;
     75% {transform: scale(1.25)}
     100% {transform: scale(1)}
 }
-#personalInfo{grid-area: profileInfo;
+#personalInfo{
     text-align:right}
     #location{position: absolute;
         width: 223px;
@@ -131,7 +127,7 @@ p4{font-family: Schoolbell;
     #rectangle{
         position: absolute;
         top: 0;
-        left:0;
+        left: 20px;
         order: 1;
         height: 100%;
         width: 390px;
@@ -164,7 +160,6 @@ p4{font-family: Schoolbell;
     #skillsrow1{
         text-align: left;
         grid-area: skillsrow1;
-        position: top;
     }
     #skillsrow2{
         text-align: center;
@@ -315,6 +310,18 @@ p4{font-family: Schoolbell;
         #rectangle6{
             background: #C9D8DF;}
 
+    
+
 /*Footer*/
 .footer{grid-area: footer;
     text-align: right;}
+
+@media only screen and (max-width: 600px){
+
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexChild{
+        width: 100%;
+    }
+}
