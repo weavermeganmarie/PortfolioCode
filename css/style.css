@@ -1,0 +1,320 @@
+/*Document Info*/
+
+body{
+    display: grid;
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-right: 120px;
+    columns: 1;
+    column-width: 100%;
+    grid-row: auto auto auto auto auto;
+    row-gap: 50px;
+    min-width: 1100px;
+    margin-bottom: 50px;
+    grid-template-areas: 
+        "header"
+        "skills"
+        "about"
+        "projects"
+        "footer"
+        ;  
+}
+body{font-family: 'Roboto', sans-serif; 
+    font-family: 'Schoolbell', cursive;}
+h1{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 160px;
+    line-height: 187px;}
+h2{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;}
+h3{font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;}
+h4{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;}
+p1{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;}
+p2{font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;}
+p3{font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;}
+p4{font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;}
+
+/*Header*/
+.header{grid-area: header;
+    display: grid;
+    columns: 2;
+    column-width: 50% 50%;
+    grid-row: 75px 305px;
+    position: relative;
+    width: 100%;
+    grid-template-areas: 
+        "nav nav"
+        "profile personalInfo";
+    }
+#fixedlogo{position: fixed;
+    left: 30px;
+    top: 26px;
+    width: 60px;}
+#nav{grid-area: nav;
+    }
+#profile{grid-area: profile;}
+#swirlarrow{
+    animation: swirlArrow 3s infinite;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 280px;
+    top: 480px;
+}
+@keyframes swirlArrow{
+    0% {transform: rotate(10deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(10deg)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(10deg)}
+}
+#blurb{position: absolute;
+    width: 220px;
+    height: 70px;
+    left: 125px;
+    top: 630px;
+    transform: rotate(6.19deg);
+    text-align: center;}
+#accents{
+    animation: growAccent 3s;
+    position: absolute;
+    width: 89px;
+    height: 107px;
+    left: 330px;
+    top: 185px; 
+}
+@keyframes growAccent{
+    0% {transform: scale(1)}
+    25% {transform: scale(1.25)}
+    50% {transform: scale(1)}
+    75% {transform: scale(1.25)}
+    100% {transform: scale(1)}
+}
+#personalInfo{grid-area: profileInfo;
+    text-align:right}
+    #location{position: absolute;
+        width: 223px;
+        height: 55px;
+        right: 0px;
+        top: 50px;
+        text-align: right;}
+    
+    #rectangle{
+        position: absolute;
+        top: 0;
+        left:0;
+        order: 1;
+        height: 100%;
+        width: 390px;
+        background: #FF6F61;}
+    #circle{position: absolute;
+            order: 2;
+            border-radius: 50%;
+            width: 600px;
+            height: 600px;
+            left: -20px;
+            top: 153px;
+            
+            background-image: url(https://weavermeganmarie.github.io/UX_UI_HW_17/images/homepage/profilephoto.JPG);
+            background-position: left(0);
+            background-position: top(153);
+            background-size: 600px 731px;}
+    #personalInfo{
+        display: inline-block;
+        object-position: right;}
+
+/*Skills*/
+.skills{
+    grid-area: skills;
+    display:grid;
+    grid-row: auto auto auto;
+    grid-template-areas: "skillsrow1"
+    "skillsrow2"
+    "skillsrow3";
+}
+    #skillsrow1{
+        text-align: left;
+        grid-area: skillsrow1;
+        position: top;
+    }
+    #skillsrow2{
+        text-align: center;
+        grid-area: skillsrow2;
+    }
+    #skillsrow3{
+        text-align: center;
+        color: white;
+        line-height: 35px; 
+        ;    
+    }
+    .pill{
+        border-radius: 20px; 
+        width: auto;
+        height: auto; 
+        padding: 5px 15px 5px 15px; 
+        margin-right: 6px;
+        margin-bottom:6px;
+    }
+    #sketching{ 
+        background-color: #C74375; 
+    }
+    #storyboarding{
+        background-color: #FF6F61; 
+    }
+    #UIdesign{
+        background-color: #92A8D1; 
+    }
+    #RedLining{
+        background-color: #F0C05A; 
+    }
+    #UserTesting{
+        background-color: #64A1A4; 
+    }
+    #UserInterviews{
+        background-color: #C1C5E0; 
+    }
+    #HTML{
+        background-color: #368E76; 
+    }
+    #CSS{
+        background-color: #577048; 
+    }
+    #JavaScript{
+        background-color: #DE413A; 
+    }
+    #ABTesting{
+        background-color: #5A5B9F; 
+    }
+    #Branding{
+        background-color: #D94F70; 
+    }
+    #GitHub{
+        background-color: #233B5D; 
+    }
+    #BootStrap{
+        background-color: #C26225; 
+    }
+    #Accessability{
+        background-color: #9B9740; 
+    }
+    #Surveys{
+        background-color: #7BC4C4; 
+    }
+    #CardSorting{
+        background-color: #644D43; 
+    }
+    #Prototyping{
+        background-color: #558583; 
+    }
+    #Wireframing{
+        background-color: #F0C05A; 
+    }
+    #Typography{
+        background-color: #F7CAC9; 
+    }
+    #AdobeXD{
+        background-color: #5B2C36; 
+    }
+    #Iconography{
+        background-color: #B6BF71; 
+    }
+    #ResponsiveDesign{
+        background-color: #46748E; 
+    }
+    #PresentingWork{
+        background-color: #F5BF4D; 
+    }
+    #EmpathyMap{
+        background-color: #E65F42; 
+    }
+    #AffinityDiagram{
+        background-color: #64A1A4; 
+    }
+    #Figma{
+        background-color: #B163A3; 
+    }
+    #Invision{
+        background-color: #F0C05A; 
+    }
+
+/*About*/
+.about{}
+    .clear{
+        clear: both;
+    }
+    #heading2{text-align: left;
+            grid-area: heading2;}
+    .flexContainer{display: flex;
+        flex-direction: row;
+    }
+    .swatch{
+        width: 100%;
+        height: 362px;  
+    }
+    .flexChild{
+        width: 33%;
+    }
+    #earlyYears{
+        margin-right: 6px;
+    }
+        #rectangle1{
+            background: #B6BF71;}
+    #uiuxDesigner{
+        margin-right: 6px;
+    }
+        #rectangle2{
+            background: #D8CDDD;}
+    #inspiration{}
+        #rectangle3{
+            background: #FF6F61;}
+
+/*Projects*/
+.projects{}
+    #heading3{text-align: left;
+        }
+    #departmentOfTheInterior{
+        margin-right: 6px;
+    }
+        #rectangle4{
+            background: #F34C1B;}
+    #openArmsOfMN{
+        margin-right: 6px;
+    }
+        #rectangle5{
+            background: #FBA91E;}
+    #neutralMobileApp{}
+        #rectangle6{
+            background: #C9D8DF;}
+
+/*Footer*/
+.footer{grid-area: footer;
+    text-align: right;}
