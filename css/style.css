@@ -169,7 +169,7 @@ p4{font-family: Schoolbell;
         text-align: center;
         color: white;
         line-height: 35px; 
-        ;    
+        grid-area: skillsrow3;    
     }
     .pill{
         border-radius: 20px; 
@@ -267,7 +267,7 @@ p4{font-family: Schoolbell;
         clear: both;
     }
     #heading2{text-align: left;
-            grid-area: heading2;}
+}
     .flexContainer{display: flex;
         flex-direction: row;
     }
@@ -323,5 +323,8 @@ p4{font-family: Schoolbell;
     }
     .flexChild{
         width: 100%;
+    }
+    #profile{
+        transform: scale(.5);
     }
 }
