@@ -65,88 +65,49 @@ p4{font-family: Schoolbell;
 
 /*Header*/
 .header{grid-area: header;
-    position: relative;
-    width: 100%;
     }
 #fixedlogo{position: fixed;
     left: 10px;
     top: 26px;
     width: 60px;}
+
 .headerFlexContainer{
     display: flex;
 }
 .headerFlexChild{
-    width: 100%;
+    margin-top: 50px;
+    width: 48%;
+    display: inline-block;
 }
-#swirlarrow{
-    animation: swirlArrow 3s infinite;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 280px;
-    top: 480px;
+#profile{
+    vertical-align: top;
+    padding-top: 150px;
 }
-@keyframes swirlArrow{
-    0% {transform: rotate(10deg)}
-    25% {transform: rotate(0deg)}
-    50% {transform: rotate(10deg)}
-    75% {transform: rotate(0deg)}
-    100% {transform: rotate(10deg)}
-}
-#blurb{position: absolute;
-    width: 220px;
-    height: 70px;
-    left: 125px;
-    top: 630px;
-    transform: rotate(6.19deg);
-    text-align: center;}
-#accents{
-    animation: growAccent 3s;
-    position: absolute;
-    width: 89px;
-    height: 107px;
-    left: 330px;
-    top: 185px; 
-}
-@keyframes growAccent{
-    0% {transform: scale(1)}
-    25% {transform: scale(1.25)}
-    50% {transform: scale(1)}
-    75% {transform: scale(1.25)}
-    100% {transform: scale(1)}
-}
-#personalInfo{
-    text-align:right}
-    #location{position: absolute;
-        width: 223px;
-        height: 55px;
-        right: 0px;
-        top: 50px;
-        text-align: right;}
+
+#location{
+    width: 223px;
+    height: 55px;
+    right: 0px;
+    top: 50px;
+    text-align: right;}
     
-    #rectangle{
-        position: absolute;
-        top: 0;
-        left: 20px;
-        order: 1;
-        height: 100%;
-        width: 390px;
-        background: #FF6F61;}
-    #circle{position: absolute;
-            order: 2;
-            border-radius: 50%;
-            width: 600px;
-            height: 600px;
-            left: -20px;
-            top: 153px;
-            
-            background-image: url(https://weavermeganmarie.github.io/UX_UI_HW_17/images/homepage/profilephoto.JPG);
-            background-position: left(0);
-            background-position: top(153);
-            background-size: 600px 731px;}
-    #personalInfo{
+#rectangle{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 100px;
+    height: 900px;
+    width: 390px;
+    background: #FF6F61;}
+#personalInfo{
+    display: inline-block;
+    object-position: right;
+    text-align: right;}
+#profilephotoelement{
+        position: relative;
         display: inline-block;
-        object-position: right;}
+        z-index: 2;
+    }
 
 /*Skills*/
 .skills{
