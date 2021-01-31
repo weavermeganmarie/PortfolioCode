@@ -112,25 +112,19 @@ p4{font-family: Schoolbell;
 /*Skills*/
 .skills{
     grid-area: skills;
-    display:grid;
-    grid-row: auto auto auto;
-    grid-template-areas: "skillsrow1"
-    "skillsrow2"
-    "skillsrow3";
+    display:flex;
+    flex-direction: column;
 }
     #skillsrow1{
         text-align: left;
-        grid-area: skillsrow1;
     }
     #skillsrow2{
         text-align: center;
-        grid-area: skillsrow2;
     }
     #skillsrow3{
         text-align: center;
         color: white;
-        line-height: 35px; 
-        grid-area: skillsrow3;    
+        line-height: 35px;    
     }
     .pill{
         border-radius: 20px; 
