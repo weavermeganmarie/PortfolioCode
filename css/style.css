@@ -9,7 +9,6 @@ body{
     column-width: 100%;
     grid-row: auto auto auto auto auto;
     row-gap: 50px;
-    min-width: 1100px;
     margin-bottom: 50px;
     grid-template-areas: 
         "header"
@@ -71,6 +70,12 @@ p4{font-family: Schoolbell;
     top: 26px;
     width: 60px;}
 
+#personalInfo{
+    display: inline-block;
+    object-position: right;
+    text-align: right;
+}
+
 .headerFlexContainer{
     display: flex;
 }
@@ -81,7 +86,7 @@ p4{font-family: Schoolbell;
 }
 #profile{
     vertical-align: top;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 #location{
@@ -99,15 +104,6 @@ p4{font-family: Schoolbell;
     height: 900px;
     width: 390px;
     background: #FF6F61;}
-#personalInfo{
-    display: inline-block;
-    object-position: right;
-    text-align: right;}
-#profilephotoelement{
-        position: relative;
-        display: inline-block;
-        z-index: 2;
-    }
 
 /*Skills*/
 .skills{
@@ -271,15 +267,62 @@ p4{font-family: Schoolbell;
 .footer{grid-area: footer;
     text-align: right;}
 
-@media only screen and (max-width: 600px){
 
+@media only screen and (max-width: 1250px){
+        body{
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+            row-gap: 20px;
+        }
+        .headerFlexContainer{ 
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .headerFlexChild{
+            margin-top: 10px;
+            width: 100%;
+        }
+        #location{
+            position: absolute;
+            width: 223px;
+            height: 55px;
+            right: 20px;
+            top: 50px;
+            text-align: right;}
+        #personalInfo{
+            text-align: center;}
+        #rectangle{
+            display: none;
+        }
+        #profile{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: #FF6F61;
+            padding-top: 0px;
+        }
+        #profilephotoelement{
+        }
+
+    
+    }
+@media only screen and (max-width: 800px){
     .flexContainer{
         flex-direction: column;
     }
     .flexChild{
         width: 100%;
+        margin-bottom: 20px;
     }
-    #profile{
-        transform: scale(.5);
+}
+
+@media only screen and (max-width: 600px){
+    body{
+      margin-left: 10px;
+      margin-right: 10px;
     }
+
+
+
 }
