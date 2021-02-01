@@ -94,7 +94,8 @@ p4{font-family: Schoolbell;
     height: 55px;
     right: 0px;
     top: 50px;
-    text-align: right;}
+    text-align: right;
+    z-index: 100;}
     
 #rectangle{
     position: absolute;
@@ -112,6 +113,7 @@ p4{font-family: Schoolbell;
     flex-direction: column;
 }
     #skillsrow1{
+
         text-align: left;
     }
     #skillsrow2{
@@ -321,8 +323,34 @@ p4{font-family: Schoolbell;
     body{
       margin-left: 10px;
       margin-right: 10px;
+      display: flex;
+        flex-direction: column;}
+    
+    .pill{
+        transform: scale(.8);
+    }
+    #profilephotoelement{
+        width: 480px;
+    }
+    h1{
+        font-size: 100px;
+        line-height: 110px;
     }
 
-
-
+    .footer{
+        align-content: center;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 510px){
+    #profilephotoelement{
+        width: 300px;}
+    h1{
+        font-size: 80px;
+        line-height: 100px;
+        }
+    #profile{
+        padding: 0;
+        margin: 0px;
+    }
 }
