@@ -19,38 +19,39 @@ body{
         ;  
 }
 body{font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto Mono', monospace;
     font-family: 'Schoolbell', cursive;}
-h1{font-family: Roboto;
+h1{font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 160px;
     line-height: 187px;}
-h2{font-family: Roboto;
+h2{font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
     line-height: 70px;}
-h3{font-family: Roboto;
+h3{font-family: Roboto Mono;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 30px;}
-h4{font-family: Roboto;
+h4{font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;}
-p1{font-family: Roboto;
+p1{font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;}
-p2{font-family: Roboto;
+p2{font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;}
-p3{font-family: Roboto;
+p3{font-family: Roboto Mono;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
